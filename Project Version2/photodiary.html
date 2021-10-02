@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/photodiary.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<title>PHOTODIARY</title>
+
+	<script src="js/photo.js"></script>
+
+<style>
+</style>
+
+</head>
+
+<body id="body">
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="toggle" id="toggle" onclick="dropDown();" for="check">&#9776;</div>
+	
+				<a class="header_logo" id="logo" href="index.html" style="text-decoration:none">MINIMØ</a>
+				<nav class="nav" id="nav">
+					<ul class="nav ul">
+						<li><a class="nav_link" href="lifestyle.html" style="text-decoration:none">LIFESTYLE</a></li>
+						<li><a class="nav_link" href="photodiary.html" style="text-decoration:none">PHOTODIARY</a></li>
+						<li class="li">
+							<a class="nav_link drop-down-menu mainLink" href="#" style="text-decoration:none">ENTERTAIMENTS</a>
+							<ul class="drop-down-items">
+								<li><a href="music.html" class="nav_link">MUSIC</a></li>
+								<li><a href="game.html" class="nav_link">GAME</a></li>
+							</ul>
+						</li>
+						<li>	
+							
+							<a class="nav_link " href="travel.html" style="text-decoration:none">TRAVEL</a>
+							
+						</li>
+	
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="set-style">
+		<span id="light" onclick="setStyleDark();">&#127761;</span> 
+		<span id="dark" onclick="setStyleLight();">&#127765;</span>
+	</div>
+<div class="w3-content w3-section content" >
+  <img class="mySlides" src="https://c.stocksy.com/a/dyf100/z9/399691.jpg" />
+  <img class="mySlides" src="https://c.stocksy.com/a/nLc700/z9/1815719.jpg" />
+  <img class="mySlides" src="https://c.stocksy.com/a/5o4300/z9/733465.jpg" />
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	<div class="rec">
+		<h1 class="beauty">Beauty of the life</h1>
+	</div>
+	<div class="rec_text">
+		<p class="beauty_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteursintoccaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laboru.</p>
+	</div>
+</body>
+<footer id="footer">
+		<p id="p">©SDU 2021</p>
+	</footer>
+</html>

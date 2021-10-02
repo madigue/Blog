@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- myJS-->
+    <script src="js/forest.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/forest.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <title>MINIMO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="toggle" id="toggle" onclick="dropDown();" for="check">&#9776;</div>
+    
+                <a class="header_logo" id="logo" href="index.html" style="text-decoration:none">MINIMØ</a>
+                <nav class="nav" id="nav">
+                    <ul class="nav ul">
+                        <li><a class="nav_link" href="lifestyle.html" style="text-decoration:none">LIFESTYLE</a></li>
+                        <li><a class="nav_link" href="photodiary.html" style="text-decoration:none">PHOTODIARY</a></li>
+                        <li class="li">
+                            <a class="nav_link drop-down-menu mainLink" href="#" style="text-decoration:none">ENTERTAIMENTS</a>
+                            <ul class="drop-down-items">
+                                <li><a href="music.html" class="nav_link">MUSIC</a></li>
+                                <li><a href="game.html" class="nav_link">GAME</a></li>
+                            </ul>
+                        </li>
+                        <li>	
+                            
+                            <a class="nav_link " href="travel.html" style="text-decoration:none">TRAVEL</a>
+                            
+                        </li>
+    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+            <div class="content">
+                <div class="player">
+                    <img class="img" id="button" src="http://www.clipartbest.com/cliparts/niB/M88/niBM88d6T.jpg" alt="" onclick="play();">
+                </div>
+            </div>
+
+            <audio id="audio">
+                <source src="music/les.mp3" type="audio/mp3">
+            </audio>
+</body>
+</html>

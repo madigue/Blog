@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- myJS-->
+    <script src="js/savanna.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/savanna.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <title>MINIMO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body">
+    
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="toggle" id="toggle" onclick="dropDown();" for="check">&#9776;</div>
+    
+                <a class="header_logo" id="logo" href="index.html" style="text-decoration:none">MINIMØ</a>
+                <nav class="nav" id="nav">
+                    <ul class="nav ul">
+                        <li><a class="nav_link" href="lifestyle.html" style="text-decoration:none">LIFESTYLE</a></li>
+                        <li><a class="nav_link" href="photodiary.html" style="text-decoration:none">PHOTODIARY</a></li>
+                        <li class="li">
+                            <a class="nav_link drop-down-menu mainLink" href="#" style="text-decoration:none">ENTERTAIMENTS</a>
+                            <ul class="drop-down-items">
+                                <li><a href="music.html" class="nav_link">MUSIC</a></li>
+                                <li><a href="game.html" class="nav_link">GAME</a></li>
+                            </ul>
+                        </li>
+                        <li>	
+                            
+                            <a class="nav_link " href="travel.html" style="text-decoration:none">TRAVEL</a>
+                            
+                        </li>
+    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+  
+
+    <div class="set-style">
+        <span id="light" onclick="setStyleDark();">&#127761;</span> 
+        <span id="dark" onclick="setStyleLight();">&#127765;</span>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="content__slider">
+                
+                    <img src="css/image/slider1.jpg" alt="" class="slide">
+                   <img src="css/image/slider2.jpg" alt="" class="slide">
+                   <img src="css/image/slider3.jpg" alt="" class="slide">
+                
+            </div>
+    
+
+            <script>
+                var slides = document.getElementsByClassName('slide');
+                var index = 0;
+                carousel();
+                function carousel() {
+
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+
+
+                    slides[index].style.display = "block";
+
+                    if (index == slides.length - 1) {
+                        index = 0;
+                    }
+
+                    index++;
+
+                    setTimeout(carousel, 5000);
+                }
+            </script>
+
+           
+        </div>
+        
+
+        <div class="title">
+             <div class="title__text">
+                <H1 class="H1">Beauty of Savanna</H1>
+
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat
+                    consequuntur pariatur. Assumenda voluptates deserunt ex tempora vero? Doloremque quo nulla saepe?
+                    Aperiam tenetur assumenda quo veritatis repudiandae suscipit soluta.
+                    Nostrum cumque temporibus enim dolore natus labore ut totam dicta fugit? Error nemo similique
+                    voluptatem dolorum! Tempore, deleniti quia magni dicta vitae, ipsam minima obcaecati asperiores
+                    voluptatem nesciunt similique? Consectetur!
+                    Laudantium incidunt earum, obcaecati necessitatibus placeat fugit nihil maiores fugiat dolore
+                    reprehenderit magnam quibusdam fuga maxime, ex pariatur accusamus molestiae molestias modi tempora
+                    eveniet dolorem omnis! Repellat eum ad veniam.</div>
+            </div>
+
+            <a href="#a" class="title__button" id="button" onclick="setString();">Go To AviaSales</a>
+
+            <p id="ppp"></p>
+        </div>
+
+   
+    </div>
+`` </section>
+	    <footer id="footer">
+		    <p id="p">©SDU 2021</p>
+	    </footer>
+    </section>
+
+</body>
+
+</html>
